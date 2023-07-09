@@ -1,17 +1,22 @@
 import retrivedArray from './local-data.js';
 
-let getWeatherInfo = document.getElementById("get-weather-button");
+let getWeatherInfo = document.querySelector("form");
 let display = document.querySelector('.lower');
 
-getWeatherInfo.onclick = function (){
-    render();
-}
+getWeatherInfo.addEventListener("submit",(event)=>{
+   event.preventDefault();
+   render();
+   console.log(retrivedArray.length);
+   retrivedArray.forEach(element => {
+            console.log(element.city);
+        });
+});
 
 function render(){
     
     let cityName = document.getElementById("input-city-name").value.toLowerCase();
 
-    let searchedCity = retrivedArray.filter(function   (mycity){
+    let searchedCity = retrivedArray.filter(function  (mycity){
         return mycity.city == cityName;
     });
 
@@ -34,13 +39,13 @@ if(eachCity != undefined){
         </div>
         <div class="weather-mathematical-discription">
             <div class="weather-desc">
-                <p>Feels like:</p><p>${eachCity.feels}°C</p>
+                <p>Feels like:</p><p>${eachCity.temprature}°C</p>
             </div>
             <div class="weather-desc">
                 <p>Humidity:</p><p>${eachCity.humidity}%</p>
             </div>
             <div class="weather-desc">
-                <p>Windspeed:</p><p>${eachCity.windsSpeed}m/s</p>
+                <p>Wind:</p><p>${eachCity.windsSpeed} km/h</p>
             </div>
         </div>
     </div>`;

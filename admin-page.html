@@ -13,23 +13,33 @@
         <p class="page-title">Enter City Weather Information</p>
         <p>City Name : </p>
         <input type="text" class="input-city-name" id="input-city-name-admin">
-        <p>Image : </p>
-        <input type="text" class="input-city-image" id="input-city-image-admin">
         <p>Temprature : </p>
-        <input type="text" class="input-city-temprature" id="input-city-temprature-admin">
+        <input type="number" max="60"  min="-25" class="input-city-temprature" id="input-city-temprature-admin">
         <p> Description: </p>
-        <input type="text" class="input-city-discription" id="input-city-discription-admin">
-        <p>Feels like : </p>
-        <input type="text" class="input-city-fells-like" id="input-city-feels-like-admin">
+        <select  class="input-city-discription" id="input-city-discription-admin">
+            <option value="Sunny" selected>Sunny</option>
+            <option value="Cloudy">Cloudy</option>
+            <option value="Rainy" >Rainy</option>
+            <option value="Stormy">Stormy</option>
+            <option value="Windy">Windy</option>
+            <option value="Foggy">Foggy</option>
+            <option value="Snowy">Snowy</option>
+            <option value="Hailstorm">Hialstorm</option>
+            <option value="Overcast">Overcast</option>
+            <option value="Muggy">Muggy</option>
+        </select>
         <p>Humidity: </p>
-        <input type="text" class="input-city-humidity" id="input-city-humidity-admin">
+        <input type="number"  max="100" min="0" class="input-city-humidity" id="input-city-humidity-admin">
         <p>Wind Speed: </p>
-        <input type="text" class="input-city-wind-speed" id="input-city-wind-speed-admin">
+        <input type="number" max="5000" min="0" class="input-city-wind-speed" id="input-city-wind-speed-admin">
+        <p>Image:</p>
+        <input type="file" class="input-city-image" id="input-city-image-admin">
         <div></div>
         <div class="admin-buttons">
             <button class="register-button" id="register-button">Register</button>
             <button class="cancel-button" id="cancel-button">Cancle</button>
         </div>
     </div>
+    <p class="already-registerd"></p>
 </body>
 </html>
