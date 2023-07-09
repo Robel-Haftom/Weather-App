@@ -1,0 +1,121 @@
+body{
+    background-color: rgba(136, 125, 125, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 60px;
+    gap: 50px;
+}
+
+p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.upper,
+.lower{
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.weather-image{
+    width: 100px;
+    height: 100px;
+}
+
+.main-screen{
+    background-color: white;
+    display: flex;
+    width: fit-content;
+    height: fit-content;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    box-shadow: 0px 0px 12px 10px gray;
+    border-radius: 6px;
+    padding: 20px 100px;
+}
+
+.weather-title{
+    font-size: 30px;
+    font-weight: 600;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.input-and-button{
+    display: flex;
+    align-items: center;;
+    gap: 50px;
+}
+
+.input-city-name{
+    border: 1px solid rgb(203, 199, 199);
+    height: 25px;
+    width: 200px;
+    align-items: stretch;
+    font-size: 20px;
+    padding: 8px 15px;
+}
+
+.get-weather-button{
+    border: none;
+    padding: 8px 10px;
+    border-radius: 4px;
+    background-color: rgb(17, 74, 248);
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    height: 40px;
+    align-items: center;
+}
+
+.weather-whole-discription{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+}
+
+.weather-mathematical-discription{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+}
+.weather-desc{
+    background-color: rgb(191, 189, 189);
+    padding: 2px 20px 3px 20px;
+    border-radius: 4px;
+}
+
+.weather-status {
+    font-weight: 800;
+    font-size: 35px;
+    margin-top: 3px;
+    margin-bottom: 3px;
+}
+
+.weather-description{
+    font-weight: 600;
+    font-size: 20px;
+}
+.no-such-city{
+    font-size: 20px;
+    font-weight: 500;
+    color: red;
+}
+
+.user{
+    height: 50px;
+    width: 50px;
+    border-radius: 10px;
+}
