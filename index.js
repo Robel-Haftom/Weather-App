@@ -29,18 +29,18 @@ if(eachCity != undefined){
     display.innerHTML = `
         <div class="weather-whole-discription">
             <img src=${eachCity.image} class="weather-image">
-            <p class="weather-status">${eachCity.temprature} °C</p>
+            <p class="weather-status">${eachCity.temprature}°C</p>
             <p class="weather-description">${eachCity.discription}</p>
         </div>
         <div class="weather-mathematical-discription">
             <div class="weather-desc">
-                <p>Feels like:${eachCity.feels}</p>
+                <p>Feels like:</p><p>${eachCity.feels}°C</p>
             </div>
             <div class="weather-desc">
-                <p>Humidity:${eachCity.humidity}</p>
+                <p>Humidity:</p><p>${eachCity.humidity}%</p>
             </div>
             <div class="weather-desc">
-                <p>Wind Speed:${eachCity.windsSpeed}</p>
+                <p>Windspeed:</p><p>${eachCity.windsSpeed}m/s</p>
             </div>
         </div>
     </div>`;
