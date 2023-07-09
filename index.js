@@ -1,7 +1,4 @@
-import weatherData from './weather-data.js';
-
-let retrivedArrayString = localStorage.getItem('weatheInfo');
- let retrivedArray = JSON.parse(retrivedArrayString);
+import retrivedArray from './local-data.js';
 
 let getWeatherInfo = document.getElementById("get-weather-button");
 let display = document.querySelector('.lower');
@@ -14,7 +11,7 @@ function render(){
     
     let cityName = document.getElementById("input-city-name").value.toLowerCase();
 
-    let searchedCity = weatherData.filter(function   (mycity){
+    let searchedCity = retrivedArray.filter(function   (mycity){
         return mycity.city == cityName;
     });
 

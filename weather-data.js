@@ -1,4 +1,4 @@
-export const  weatherInfo = [{
+const  weatherInfo = [{
     city: "london",
     image:"./images/cloud.png",
     temprature: 4,
